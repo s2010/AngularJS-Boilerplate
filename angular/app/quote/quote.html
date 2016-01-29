@@ -1,0 +1,14 @@
+<div class="col-sm-6 col-sm-offset-3">
+	<div class="well">
+		<h3>Chuck Norris Quote</h3>
+		<button class="btn btn-primary" ng-click="quote.getQuote()">Get Quote!</button>
+        <hr>
+        <blockquote ng-if="quote.quote">
+            <p>{{ quote.quote }} </p>
+        </blockquote>
+		<div class="alert alert-danger" ng-if="quote.error">
+			<strong>There was an error: </strong> {{quote.error.error}}
+			<br>Please go back and login again
+		</div>
+	</div>
+</div>
